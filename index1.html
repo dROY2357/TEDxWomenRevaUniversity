@@ -1,0 +1,115 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="tedx.ico"/>
+    <title>TEDxREVAUniversity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
+    <style>
+        
+        button{
+            width:auto;
+            height:40px;
+            font-family:Comfortaa;
+            border:solid 1px;
+            background:transparent;
+            color:white;
+            font-size:22px;
+            border-radius:4px;
+        }
+        button:hover{
+            background:white;
+            color:red;
+        }
+        .bgimg {
+            background:#000;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: white;
+            font-family: "Comfortaa", Cursive, monospace;
+            font-size: 25px;
+        }
+        .middle {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+        h1{
+            font-family: "Segoe UI", "Roboto", "Helvetica Neue" ;
+        }
+        .circle {
+            background-color: transparent;
+            border:8px solid rgb(255, 255, 255);    
+            height:190px;
+            border-radius:100%;
+            left: 5%;
+            display: inline-block;
+            text-align: center;
+        }
+        .timer {
+            position: relative;
+            top: 50%;
+            text-align: center;
+        }
+   </style>
+   <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          document.getElementById("days").innerHTML = days + "d ";
+          document.getElementById("hours").innerHTML = days + "h ";
+          document.getElementById("mins").innerHTML = days + "m ";
+          document.getElementById("secs").innerHTML = days + "s ";
+        }, 1000);
+    </script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bgimg">
+        <div class = "middle">
+            <h1><font color=red>TEDx</font>REVAUniversity</h1>
+            <h4>Talk starts in</h4>
+        </div>
+        <div class="timer container">
+            <div class="row">
+            <div class="col-2 align-self-center circle" id="days">
+
+            </div>
+            <div class="col-1"></div>
+            <div class="col-2 align-self-center circle" id="hours">
+                
+            </div>
+            <div class="col-1"></div>
+            <div class="col-2 align-self-center circle" id="mins">
+                
+            </div>
+            <div class="col-1"></div>
+            <div class="col-2 align-self-center circle" id="secs">
+                
+            </div>
+            <div class="col-1"></div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>

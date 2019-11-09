@@ -1,0 +1,271 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="tedx.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEDxREVAUniversity</title>
+    <link href="mars.css" rel="stylesheet" type="text/css">
+    <link href="extrastyle.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <script>
+        var counter=0;
+        function sidenavfunc(){
+            counter++;
+            if(counter%2==0)
+                hidesidenav();
+            else
+                showsidenav();
+        }
+        function showsidenav(){
+            document.getElementById("nav1").style.display=("block");
+            document.getElementById("switch").innerHTML=("X");
+        }
+        function hidesidenav(){
+            document.getElementById("nav1").style.display=("none");
+            document.getElementById("switch").innerHTML=("=");
+        }
+    </script>
+    <script src="speakersinfo.js"></script>
+    </head>
+    <body onload="hidesidenav();" style="background:#f7f1de">
+        <div class="floatnav">
+            <a href="https://www.townscript.com/e/tedxrevauniversity-433121"><button class="floattab booknow">Book Now</button></a>
+            <a href="sponsors.html"><button class="floattab">Sponsors</button></a>
+            <a href="home.html"><button class="floattab">Home</button></a>
+            <a href="team.html"><button class="floattab">Team</button></a>
+            <a href="#contact"><button class="floattab">Contact Us</button></a>
+        </div>
+        <div class="sidenav inverted">
+            <div class="row"><span class="left">&nbsp;&nbsp;</span><button id="switch" style="font-size:28px;" class="mico inverted left" onclick="sidenavfunc();">=</button>
+            </div>
+            <div id="nav1" class="row">
+                <a href="sponsors.html"><div class="mtab">Sponsors</div></a>
+                <a href="home.html"><div class="mtab" onclick="hidesidenav();">Home</div></a>
+                <a href="team.html"><div class="mtab" onclick="hidesidenav();">Team</div></a>
+                <a href="#contact"><div class="mtab" onclick="hidesidenav();">Contact Us</div></a>
+            </div>
+        </div>
+        <section class="fullscreen" id="speakers"><br>
+            <p class="heading padleft red">Speakers</p>
+
+            <div style="display:block; margin-left:auto; width: 90%;">
+                
+              
+          <div class="col large4">
+                <div class="polaroid">
+                    <img src="img/speakers/prakash.jpg" class="person">
+                    <h3 style="text-align:center; padding-bottom: 10px;">Prakash Belawadi</h3>
+                    <button class="alert" onclick="openmodal10()">Know More</button><br>
+                </div>
+            </div>
+            <div class="col large4">
+              <div class="polaroid">
+                  <img src="img/speakers/RoopaDivakar.jpeg" class="person">
+                  <h3 style="text-align:center; padding-bottom: 10px;">Roopa Divakar Moudgil</h3>
+                  <button class="alert" onclick="openmodal1()">Know More</button><br>
+              </div>
+          </div>
+          <div class="col large4">
+                    <div class="polaroid">
+                        <img src="img/speakers/CaptainNaveen.jpg" class="person">
+                        <h3 style="text-align:center; padding-bottom: 10px;">Captain Naveen Nagappa</h3>
+                        <button class="alert" onclick="openmodal2()">Know More</button><br>
+                    </div>
+                </div>
+
+
+                <div class="col large4">
+                    <div class="polaroid">
+                        <img src="img/speakers/neerajchandra.jpeg" class="person">
+                        <h3 style="text-align:center; padding-bottom: 10px;">Neeraj Chandra</h3>
+                        <button class="alert" onclick="openmodal3()">Know More</button><br>
+                    </div>
+                </div>
+                <div class="col large4">
+                    <div class="polaroid">
+                        <img src="img/speakers/RJSmitha.PNG" class="person">
+                        <h3 style="text-align:center; padding-bottom: 10px;">Mirchi RJ Smitha</h3>
+                        <button class="alert" onclick="openmodal4()">Know More</button><br>
+                    </div>
+                </div>
+                <div class="col large4">
+                    <div class="polaroid">
+                        <img src="img/speakers/AnjuMaudgalKadam.jpg" class="person">
+                        <h3 style="text-align:center; padding-bottom: 10px;">Anju Maugdal Kadam</h3>
+                        <button class="alert" onclick="openmodal5()">Know More</button><br>
+                    </div>
+                </div>
+
+
+                <div class="col large4">
+                <div class="polaroid">
+                    <img src="img/speakers/SwatiBondia.jpg" class="person">
+                    <h3 style="text-align:center; padding-bottom: 10px;">Ms. Swati Bondia</h3>
+                    <button class="alert" onclick="openmodal6()">Know More</button><br>
+                </div>
+            </div>
+                <div class="col large4">
+                <div class="polaroid">
+                    <img src="img/speakers/dr.alikhwaja.jpeg" class="person">
+                    <h3 style="text-align:center; padding-bottom: 10px;">Dr. Ali Khwaja</h3>
+                    <button class="alert" onclick="openmodal7()">Know More</button><br>
+                </div>
+            </div>
+            <div class="col large4">
+                <div class="polaroid">
+                    <img src="img/speakers/jayanti.jpeg" class="person">
+                    <h3 style="text-align:center; padding-bottom: 10px;">Jayanti Kallam</h3>
+                    <button class="alert" onclick="openmodal8()">Know More</button><br>
+                </div>
+            </div>
+    
+    
+            <div class="col large4">
+              <div class="polaroid">
+                  <img src="img/speakers/arun.jpg" class="person">
+                  <h3 style="text-align:center; padding-bottom: 10px;">Arun S Venkataraman</h3>
+                  <button class="alert" onclick="openmodal11()">Know More</button><br>
+              </div>
+            </div>
+            <div class="col large4">
+            <div class="polaroid">
+                <img src="img/speakers/aakash.jpg" class="person">
+                <h3 style="text-align:center; padding-bottom: 10px;">Aakash Nambiar</h3>
+                <button class="alert" onclick="openmodal9()">Know More</button><br>
+            </div>
+          </div>
+    </div>
+
+        </section>
+
+
+        <section class="fullscreen primary" id="contact">
+                <h1 class="heading padleft">Get In Touch</h1>
+                <div class="col large6">
+                    <a href="faq.pdf"><h1 class="padleft" style="color:#FFF;">Frequently Asked Questions</h1><br></a>
+                    <a href="pp.pdf"><h1 class="padleft" style="color:#FFF;">Privacy Policy</h1></a><br>
+                    <a href="schedule.pdf"><h1 class="padleft" style="color:#FFF;">Schedule</h1></a><br>
+                    <h1 class="padleft" style="color:#FFF;">Follow Us On</h1><br>
+                    <div class="col large2"></div>
+                    &nbsp;&nbsp;<div class="col"><img src="img/fb.png" class="followicon" /></div>&nbsp;&nbsp;&nbsp;
+                    <div class="col"><img src="img/tw.png" class="followicon" /></div>&nbsp;&nbsp;&nbsp;
+                    <div class="col"><img src="img/ig.png" class="followicon" /></div>
+                </div>
+                <div class="col large6">
+                    <div class="padleft">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15542.89373821591!2d77.6346617!3d13.1166989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdee225fe28f600f6!2sREVA+University!5e0!3m2!1sen!2sin!4v1522677320198" style="border: none; border-radius:10px; height: 50%; width: 100%; " allowfullscreen="yes"></iframe>
+                     </div>
+                </div><br><br><br><br>
+                <div class="alert" style="margin-top:2%">
+                <div class="col large7">
+                        <h3 style="color: aliceblue" class="padleft">This independent TEDx event is operated under license from TED.</h3>
+                </div>
+                <div class="col large4">
+                        <h3 style="color: aliceblue" class="padleft">&copy; TEDxREVAUniversity 2019</h3>
+                </div>
+                </div>
+        </section>
+        <a href="https://www.townscript.com/e/tedxrevauniversity-433121"><img class="bnbut polaroid" src="img/tick.png" /></a>
+
+
+        <div class="modalcontainer" id="mod1">
+          <div class="modal"><button class="alert right small" onclick="closemodal1();">X</button>
+            <br><br><h2 style="text-align:center">Roopa Divakar Moudgil</h2>
+            <p>
+                Roopa Divakar Moudgil, commonly known as D. Roopa, is an Indian Police Service (IPS) officer from Davanagere, Karnataka. She is the first woman to become an Indian Police Service (IPS) official in Karnataka. She is currently the Inspector- General of Police, the second highest-ranked officer in hierarchy in Bangalore and Karnataka. She is also Additional Commandant General, Home Guards & Ex-Officio Additional Director, Civil defence, in Bengaluru. She was previously posted as Commissioner for Traffic and Road Safety in Karnataka and prior to that as Deputy Inspector General of Prisons.
+            </p>
+          </div>
+        </div>
+
+          <div class="modalcontainer" id="mod2">
+            <div class="modal"><button class="alert right small" onclick="closemodal2();">X</button>
+              <br><br><h2 style="text-align:center">Capt. Naveen Nagappa</h2>
+              <p>
+                  Capt. Naveen Nagappa is a graduate in Mechanical Engineering from Babuji Institute of Engineering and Technology, Davangere. After his training at Indian Military Academy, Dehradun, he joined 13 Battalion of J&K Rifles during 1999. With just 6 months of service behind him he lead a team of 120 soldiers to fight the enemy at point 4875. He had to fight the enemy in biting cold without food or water for more than 60 hrs. During the final assault he got severely injured by enemy grenade sustaining injuries to both his legs. After 21 months of hospitalisation and 8 major surgeries he was declared medically unfit to serve. Currently he is engaged in motivating the youth towards nationalism and patriotism. He provides counselling to the youth to join the defence forces. He is also involved in welfare of Martyr families. ￼
+              </p>
+            </div>
+          </div>
+
+          <div class="modalcontainer" id="mod3">
+            <div class="modal"><button class="alert right small" onclick="closemodal3();">X</button>
+              <br><br><h2 style="text-align:center">Neeraj Chandra</h2>
+              <p>
+                  Neeraj Chandra is an alumnus of IIM Ahmedabad and an Electrical Engineer from IIT Kanpur. Neeraj started his career with Unilever in India where he held several positions in Sales and Marketing over a period of 20 years reaching the position of Regional Brand Director for Asia. Neeraj then moved as the VP & Chief Operations Officer for Britannia where he built new benefit spaces, new brands, and big new channels, successfully tripling the businesses to a billion dollars. Thereafter, he moved to Emami as the CEO – Consumer Care Division. Neeraj has a passion for creating large new businesses and brands.
+              </p>
+            </div>
+          </div>
+
+          <div class="modalcontainer" id="mod4">
+            <div class="modal"><button class="alert right small" onclick="closemodal4();">X</button>
+              <br><br><h2 style="text-align:center">Mirchi RJ Smitha</h2>
+              <p>
+                  She started off as an on-AIR RJ and went on to become a popular voice within a short span of time. Following this, the lady took a hiatus from Indian shores and moved to the US where she continued to engage herself with community radio shows. Currently, She can be spotted every Monday to Saturday from 7:00 AM to 12:00 - “Hi Bengaluru” featuring on Mirchi 98.3
+              </p>
+            </div>
+          </div>
+
+          <div class="modalcontainer" id="mod5">
+            <div class="modal"><button class="alert right small" onclick="closemodal5();">X</button>
+              <br><br><h2 style="text-align:center">Anju Maudgal Kadam</h2>
+              <p>
+                  Anju Maudgal Kadam co-founded the #100SareePact in 2015. While lamenting all the sarees they had kept buried in their closets, they decided to wear a hundred sarees a year to re-live all that they had associated with the same sarees. The pact has since then taken her places, including recently to a TED talk #NayiSoch hosted by none other than Shahrukh Khan.
+              </p>
+            </div>
+          </div>
+
+          <div class="modalcontainer" id="mod6">
+            <div class="modal"><button class="alert right small" onclick="closemodal6();">X</button>
+              <br><br><h2 style="text-align:center">Swati Bondia</h2>
+              <p>
+                  Founder and Director of Clap (Centre for learning and Advanced Practice) is a Social entrepreneur from Odisha. She started her first venture as OM Shanti Traders, at the age of 18 in Bangalore. She started her second venture CLAP which emerged as the leading career mapping organisation in the country with clientele diversing over 5 countries. She has received “Woman of the Year” award in the year 2016 and 2018. She is the awardee of the prestigious “Sevak of the Year” by sevak foundation. She is the only selected participant from SAARC nations for UN funded Bottom of the Pyramid Challenge at Bogota Colombia.
+              </p>
+            </div>
+          </div>
+
+          <div class="modalcontainer" id="mod7">
+            <div class="modal"><button class="alert right small" onclick="closemodal7();">X</button>
+              <br><br><h2 style="text-align:center">Dr. Ali Khwaja</h2>
+              <p>
+                  Dr. Ali Khwaja is the Chairman and principal faculty of Banjara Academy. Since more than three decades, he has been conducting training programs and workshops for most prestigious Government and private organisations and is in great demand all over the country by wide range of Institutions. Twenty years ago, he devised a unique program to teach people from all walks of life and of ages, the human skills of counselling and emotional support across the Indian Community. This course has no text book, curriculum or theory, but has touched the hearts of thousands who have not only improved their life significantly, but are consistently reaching out to many others not only in India but also in other countries.
+              </p>
+            </div>
+          </div>
+
+          <div class="modalcontainer" id="mod8">
+            <div class="modal"><button class="alert right small" onclick="closemodal8();">X</button>
+              <br><br><h2 style="text-align:center">Jayanthi Kallam</h2>
+              <p>
+                  Jayanthi Kallam is the co-founder and executive director of ARRC (Avian and Reptile Rehabilitation Centre) operating in Bangalore, India. A computer engineer by profession, she has worked in the United States across many industrial sectors, while simultaneously pursuing an MBA degree from Leonard Stern School of Business,New York University. She graduated with distinction as a Stern scholar and undertook management roles in the IT/Financial Services sectors in New York City.
+              </p>
+            </div>
+          </div>
+
+          <div class="modalcontainer" id="mod9">
+            <div class="modal"><button class="alert right small" onclick="closemodal9();">X</button>
+              <br><br><h2 style="text-align:center">Aakash Nambiar</h2>
+              <p>
+                  Ultra Marathon runner, Barefoot runner, Cyclist, Pinkathon Ambassdor, Bharat Beard Club Ambassdor. He is also a Freelance Marathon Organiser and had participated in several 10kms, 21kms, 42kms, Goa to Gokarna (145 kms), Bangalore to Mysore (145 kms), Una to Dharamshala (120 kms), and cycled from Chikmagalur to Udupi (600 kms) in 7 Days.He has raised funds for various causes through running.
+              </p>
+            </div>
+          </div>
+
+          <div class="modalcontainer" id="mod11">
+            <div class="modal"><button class="alert right small" onclick="closemodal11();">X</button>
+              <br><br><h2 style="text-align:center">Arun S Venkataraman</h2>
+              <p>
+                Arun S Venkataraman is a Robotics engineer with multidisciplinary international research and patent consulting experience. He works with technology companies and academic institutions in strategizing best innovation practices through research consulting, managing patent portfolios and providing training on various aspects of intellectual property. 
+                  <br>Arun holds a Master's degree in Robotics from Royal Institute of Technology (KTH), Stockholm and a Bachelor's degree in Electrical Engineering from Anna University, Chennai.
+              </p>
+            </div>
+          </div>
+
+          <div class="modalcontainer" id="mod10">
+            <div class="modal"><button class="alert right small" onclick="closemodal10();">X</button>
+              <br><br><h2 style="text-align:center">Prakash Belawadi</h2>
+              <p>
+                Prakash Belawadi is an actor and writer, known for Airlift (2016), Sanju (2018) and Wazir (2016). He was born into a family of theatre artistes in Bengaluru. He obtained a degree in Mechanical Engineering from University Visvesvaraya College of Engineering. He is an Indian theater, film, television and media personality, an activist and a journalist known for his remarkable performances in movies of various languages such as Hindi, Tamil, Telugu and Malayalam; few of them being airlift, Madras cafe, Youngistaan, Talvar, Kendasampige, Solo and many more. He co-founded the Centre for Film and Drama and launched the Suchitra School of Cinema and Dramatic Arts, both in Bangalore, the latter in 2012. He also won the National Film Award (2002) for his directorial film Stumble and Karnataka Nataka Academy Award (2012)for his contribution to English and Kannada language theatre.
+              </p>
+            </div>
+          </div>
+
+    </body>
+</html>
